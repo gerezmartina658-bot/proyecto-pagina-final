@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Patines Kim - Contacto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-top">
+      <h1>Mundo Patines Kim</h1>
+      
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar patines, ruedas, accesorios...">
+        <button type="button">🔍</button>
+      </div>
+
+      <a href="#" class="btn-login" id="btn-login">Iniciar Sesión</a>
+    </div>
+
+   <nav>
+      <a href="index.html">HOME</a>
+      <a href="index.html#tienda">PRODUCTOS</a>
+      <a href="nosotros.html">ACERCA DE</a>
+      <a href="contacto.html">CONTACTO</a>
+      <a href="ubicacion.html">CÓMO LLEGAR</a>
+      <a href="carrito.html" class="btn-carrito-nav">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="pagina-contenedor">
+    <h2>Contacto y Asesoramiento</h2>
+
+    <section class="info-contacto">
+      <div class="info-box">
+        <h3>Horario de atención</h3>
+        <p>Lunes a viernes: 8:00 am a 12 pm y 14 pm a 19 pm</p>
+        <p>Sábado: 9 am a 15 pm</p>
+      </div>
+      <div class="info-box">
+        <h3>Teléfono y redes sociales</h3>
+        <p>Número de teléfono: 123456789</p>
+        <p>Email: contacto@mundopatineskim.com</p>
+      </div>
+    </section>
+
+    <!-- Formulario con validación JS -->
+    <form id="formConsulta">
+      <h3>Formulario de consulta</h3>
+      <input type="text" id="nombre" placeholder="Tu nombre">
+      <input type="tel" id="telefono" placeholder="Tu teléfono">
+      <input type="email" id="email" placeholder="Tu correo electrónico">
+      <textarea id="consulta" rows="5" placeholder="Escribí tu consulta"></textarea>
+      <button type="button" id="btnEnviar" class="btn-primario">Enviar Consulta</button>
+      <p id="mensajeForm" class="mensaje-form"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mundo Patines Kim. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

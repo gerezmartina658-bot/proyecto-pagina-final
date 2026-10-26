@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Patines Kim - Carrito de Compras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-top">
+      <h1>Mundo Patines Kim</h1>
+      
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar patines, ruedas, accesorios...">
+        <button type="button">🔍</button>
+      </div>
+
+      <a href="#" class="btn-login" id="btn-login">Iniciar Sesión</a>
+    </div>
+
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="index.html#tienda">PRODUCTOS</a>
+      <a href="nosotros.html">ACERCA DE</a>
+      <a href="contacto.html">CONTACTO</a>
+      <a href="ubicacion.html">CÓMO LLEGAR</a>
+      <a href="carrito.html" class="btn-carrito-nav">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+    </nav>
+  </header>
+
+<main class="pagina-contenedor">
+    <h2>Tu Carrito de Compras</h2>
+    <div class="carrito-resumen">
+      <p>Cantidad de productos seleccionados: <strong id="cant-items-carrito">0</strong></p>     
+      <div id="lista-carrito" style="margin-top: 20px; display: flex; flex-direction: column; gap: 15px;"></div>
+      <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+        <button id="btnVaciarCarrito" class="btn-primario" style="background-color: #c62828; max-width: 200px;">Vaciar Carrito</button>
+        <a href="index.html#tienda" class="btn-primario" style="text-decoration: none; text-align: center; max-width: 200px;">Seguir Comprando</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mundo Patines Kim. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
